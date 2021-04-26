@@ -7,6 +7,7 @@
 
 :root {
     --p-color: #5ea0b1;
+    --s-color: #3a3a3a;
 }
 
 /*-----BODY GENERAL STYLING ELEMENTS-----*/
@@ -16,21 +17,32 @@ body{
 
 /*-----HEADER STYLES ELEMENTS-----*/
 header {
-    background: #3a3a3a;
-    padding: 20px 35px;
+    background: var(--s-color);
+    padding: 8px 30px 15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1 {
-    font-size: 36px;
+header a {
+    text-decoration: none;
 }
 
-header a {
-    color: var(--p-color);
-    text-decoration: none;
+header h1 {
+    font-size: 36px;
+    padding: 10px 15px 5px 40px;
+    background: var(--p-color);
+    border-radius: 0 8px 8px 0;
+}
+
+header h1 a {
+    color: var(--s-color);
+    text-shadow: 0 0 5px #3a3a3a40;
+}
+
+header h1:hover {
+    background: #5ea0b1e0;
 }
 
 header nav ul {
@@ -45,4 +57,12 @@ header nav ul li a {
     font-size: 22px;
     padding: 10px 15px;
     text-decoration: underline;
+    color: var(--p-color);
+    text-shadow: 0 0 5px #5ea0b140;
+}
+
+header nav ul li a:hover {
+    background: var(--p-color);
+    color: var(--s-color);
+    border-radius: 8px;
 }
