@@ -1,0 +1,153 @@
+/*-----GLOBAL STYLING ELEMENTS-----*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --p-color: #47bedb;
+    --s-color: #3a3a3a;
+    /*-----81% transparency-----*/
+    --p-color-81t: #47bedbd0;
+    --s-color-81t: #3a3a3ad0;
+    /*-----50% transparency for shadow-----*/
+    --s-color-50t: #3a3a3a80;
+    --p-color-50t: #47bedb80;
+}
+
+/*-----BODY GENERAL STYLING ELEMENTS-----*/
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background: #d4d4d4;
+    color: var(--s-color);
+}
+
+/*-----HEADER SECTION STYLE ELEMENTS-----*/
+header {
+    background: var(--s-color);
+    padding: 8px 30px 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 36px;
+    padding: 10px 15px 5px 50px;
+    background: var(--p-color);
+    border-radius: 0 8px 8px 0;
+}
+
+header h1 a {
+    color: var(--s-color);
+    text-shadow: 0 0 3px var(--s-color-50t);
+}
+
+header h1:hover {
+    background: var(--p-color-81t);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li a {
+    font-size: 22px;
+    padding: 10px 15px;
+    text-decoration: underline;
+    color: var(--p-color);
+    text-shadow: 0 0 2px var(--p-color-81t);
+}
+
+header nav ul li a:hover {
+    background: var(--p-color-81t);
+    color: var(--s-color);
+    border-radius: 8px;
+}
+
+/*-----COMMON SECTION STYLING-----*/
+
+section {
+    padding: 30px;
+}
+
+.wide95 {
+    width: 95%;
+    margin: 0 auto; 
+}
+
+/* May use
+.bline {
+    border-bottom: 3px solid var(--s-color);
+} */
+
+.section-h2 {
+    font-size: 34px;
+    flex: 1 25%;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0 0 3px var(--s-color-50t)
+}
+
+.gen-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----HERO SECTION STYLE ELEMENTS-----*/
+
+.hero-img {
+    flex: 1 25%;
+    padding: 20px ;
+}
+
+.hero-img img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 3px -3px 10px var(--s-color-50t);
+}
+
+.hero-text {
+    flex: 5 75%;
+    padding: 55px;
+    text-shadow: 0 0 3px var(--s-color-50t);
+}
+
+.hero-text h2 {
+    font-size: 34px;
+    padding: 5px 0 15px 0;
+}
+
+.hero-text p {
+    font-size: 24px;
+    padding: 5px 0 15px 0;
+    color: var(--s-color-81t);
+}
+
+/*-----ABOUT ME SECTION STYLE ELEMENTS-----*/
+
+.about-text {
+    flex: 3 75%;
+    padding: 20px;
+    font-size: 24px;
+    border-left: 3px solid var(--s-color);
+}
+
+.about-text p {
+    padding: 15px;
+    line-height: 1.3;
+    text-align: justify;
+    color: var(--s-color-81t);
+}
