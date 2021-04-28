@@ -99,11 +99,11 @@ section {
 }
 
 .section-h2 {
-    font-size: 34px;
+    font-size: 30px;
     flex: 1 25%;
     padding: 30px;
     text-align: center;
-    text-shadow: 0 0 3px var(--s-color-50t)
+    text-shadow: 0 0 3px var(--s-color-50t);
 }
 
 .right-section {
@@ -168,20 +168,19 @@ section {
     flex: 1 50%;
 }
 
-/*-----NOTE: Found out about object-fit here: https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container-----*/
 .img-preview {
     flex: 100%;
     position: relative;
     border: 5px solid var(--p-color);
     overflow: hidden;
     max-height: 400px;
-    
 }
 
 .small-img-preview {
     max-height: 180px;
 }
 
+/*-----NOTE: Found out about object-fit here: https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container-----*/
 .img-preview img {
     transition: all 2s;
     width: 100%;
@@ -210,4 +209,25 @@ section {
 .img-preview img:hover {
     transition: all 2s;
     opacity: 80%;
+}
+
+/*-----CONTACT ME SECTION STYLE ELEMENTS-----*/
+.contact-details {
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+}
+
+.icon-img img {
+    max-height: 24px;
+}
+
+.deco {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--s-color);
+    padding: 8px 5px;
 }
