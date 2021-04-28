@@ -174,6 +174,7 @@ section {
     border: 5px solid var(--p-color);
     overflow: hidden;
     max-height: 400px;
+    box-shadow: 0 0 10px var(--s-color-50t);
 }
 
 .small-img-preview {
@@ -213,7 +214,7 @@ section {
 
 /*-----CONTACT ME SECTION STYLE ELEMENTS-----*/
 .contact-details {
-    padding: 30px;
+    padding: 40px;
     text-align: center;
     font-size: 20px;
     justify-content: space-between;
@@ -229,5 +230,6 @@ section {
     text-decoration: none;
     font-weight: bold;
     color: var(--s-color);
-    padding: 8px 5px;
+    padding: 8px;
+    text-shadow: 0 0 2px var(--s-color-50t);
 }
