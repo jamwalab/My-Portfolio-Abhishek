@@ -6,14 +6,14 @@
 }
 
 :root {
-    --p-color: #47bedb;
-    --s-color: #3a3a3a;
+    --p-color: #55cae7;
+    --s-color: #3d3e4e;
     /*-----81% transparency-----*/
-    --p-color-81t: #47bedbd0;
-    --s-color-81t: #3a3a3ad0;
+    --p-color-81t: #55cae7d0;
+    --s-color-81t: #3d3e4ed0;
     /*-----50% transparency for shadow-----*/
-    --s-color-50t: #3a3a3a80;
-    --p-color-50t: #47bedb80;
+    --s-color-50t: #3d3e4e80;
+    --p-color-50t: #55cae780;
 }
 
 /*-----BODY GENERAL STYLING ELEMENTS-----*/
@@ -184,7 +184,7 @@ section {
     width: 100%;
     object-fit: cover;
     object-position: top;
-    opacity: 50%;
+    opacity: 30%;
 }    
 
 .img-text {
@@ -192,4 +192,19 @@ section {
     bottom: 30px;
     padding: 10px 10px 10px 20px;
     background: var(--p-color);
+    color: var(--s-color);
+}
+
+.img-text h3 {
+    font-size: 22px;
+    padding: 0 0 4px 0;
+}
+
+.img-text p {
+    font-size: 14px;
+}
+
+.img-preview img:hover {
+    opacity: 80%;
+    transition-delay: 0.15s;
 }
