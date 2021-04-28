@@ -53,6 +53,7 @@ header h1 a {
 }
 
 header h1:hover {
+    transition: all 1s;
     background: var(--p-color-81t);
 }
 
@@ -73,6 +74,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
+    transition: all 1s;
     background: var(--p-color-81t);
     color: var(--s-color);
     border-radius: 8px;
@@ -98,14 +100,14 @@ section {
 
 .section-h2 {
     font-size: 34px;
-    flex: 1 20%;
+    flex: 1 25%;
     padding: 30px;
-    text-align: right;
+    text-align: center;
     text-shadow: 0 0 3px var(--s-color-50t)
 }
 
 .right-section {
-    flex: 3 80%;
+    flex: 3 75%;
     padding: 20px;
     border-left: 3px solid var(--s-color);
 }
@@ -181,6 +183,7 @@ section {
 }
 
 .img-preview img {
+    transition: all 2s;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -205,6 +208,6 @@ section {
 }
 
 .img-preview img:hover {
+    transition: all 2s;
     opacity: 80%;
-    transition-delay: 0.15s;
 }
