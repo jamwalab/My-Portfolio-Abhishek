@@ -33,6 +33,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
 
 header a {
@@ -97,14 +98,14 @@ section {
 
 .section-h2 {
     font-size: 34px;
-    flex: 1 25%;
-    padding: 20px;
-    text-align: center;
+    flex: 1 20%;
+    padding: 30px;
+    text-align: right;
     text-shadow: 0 0 3px var(--s-color-50t)
 }
 
 .right-section {
-    flex: 3 75%;
+    flex: 3 80%;
     padding: 20px;
     border-left: 3px solid var(--s-color);
 }
@@ -142,7 +143,7 @@ section {
 /*-----ABOUT ME SECTION STYLE ELEMENTS-----*/
 
 .about-text p {
-    padding: 15px 15px 15px 30px;
+    padding: 10px 20px;
     font-size: 24px;
     line-height: 1.3;
     text-align: justify;
@@ -151,39 +152,44 @@ section {
 
 /*-----WORK SECTION STYLE ELEMENTS-----*/
 
+.work {
+    display: flex;
+    padding: 10px 20px; 
+    text-decoration: none;
+}
+
 .main-work {
     flex: 1 100%;
-    display: flex;
-    padding: 15px 15px 15px 30px;   
-}
-
-/*-----NOTE: Found out about object-fit here: https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container-----*/
-.img-preview {
-    /*background-image: url("../img/work-example1.PNG");
-    background-size: cover;
-    height: 350px;*/
-    flex: 100%;
-    position: relative;
-    border: 10px solid var(--p-color);
-    overflow: hidden;
-}
-
-.img-preview img {
-    width: 100%;
-    height: min-content;
-    overflow: hidden;
-}
-
-.img-text {
-    position: absolute;
-    bottom: 50px;
 }
 
 .other-work {
     flex: 1 50%;
 }
 
-.main-work img {
-    max-height: 300px;
-    margin: 0 auto;
+/*-----NOTE: Found out about object-fit here: https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container-----*/
+.img-preview {
+    flex: 100%;
+    position: relative;
+    border: 5px solid var(--p-color);
+    overflow: hidden;
+    max-height: 400px;
+    
+}
+
+.small-img-preview {
+    max-height: 180px;
+}
+
+.img-preview img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    opacity: 50%;
+}    
+
+.img-text {
+    position: absolute;
+    bottom: 30px;
+    padding: 10px 10px 10px 20px;
+    background: var(--p-color);
 }
