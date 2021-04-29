@@ -230,6 +230,6 @@ section {
     text-decoration: none;
     font-weight: bold;
     color: var(--s-color);
-    padding: 8px;
+    padding: 5px;
     text-shadow: 0 0 2px var(--s-color-50t);
 }
