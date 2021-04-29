@@ -117,6 +117,7 @@ section {
 .hero-img {
     flex: 1 25%;
     padding: 20px ;
+    text-align: center;
 }
 
 .hero-img img {

@@ -1,0 +1,54 @@
+/*-----COMMON SECTION STYLING-----*/
+section {
+    padding: 15px 40px;
+}
+
+.resume-flex {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/*-----HERO SECTION STYLE ELEMENTS-----*/
+.hero-img img {
+    max-height: 250px;
+}
+
+/*-----ALL SECTIONS-----*/
+
+.experience {
+    color: var(--s-color);
+    text-align: justify;
+}
+
+.experience h2 {
+    font-size: 30px;
+    padding: 0 0 10px 0;
+    text-shadow: 0 0 3px var(--s-color-50t);
+    border-bottom: 2px solid var(--s-color);
+}
+
+.experience h3{
+    font-size: 24px;
+    padding: 10px 0;
+    text-shadow: 0 0 2px var(--s-color-50t);
+}
+
+.experience h4 {
+    font-size: 22px;
+    padding: 5px 0;
+    text-shadow: 0 0 2px var(--s-color-50t);
+}
+
+.experience ul {
+    padding: 8px 18px;
+}
+
+.experience ul li, .experience p {
+    font-size: 20px;
+    padding: 0 0 5px 0;
+}
+
+.experience span {
+    font-weight: lighter;
+    color: var(--s-color-81t);
+}
