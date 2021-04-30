@@ -328,9 +328,21 @@ section {
         font-size: 20px;
     }
 
+    /*-----ABOUT ME SECTION STYLE ELEMENTS-----*/
+
+    .about-text p {
+        font-size: 18px;
+    }
+
     /*-----WORK SECTION STYLE ELEMENTS-----*/
 
+    .img-text h3 {
+        font-size: 18px;
+    }
 
+    .img-text p {
+        font-size: 12px;
+    }
 
     /*-----CONTACT DETAILS-----*/
     .icon-img {
@@ -399,11 +411,6 @@ section {
         padding: 5px;
     }
 
-    /*-----ABOUT ME SECTION STYLE ELEMENTS-----*/
-
-    .about-text p {
-        font-size: 18px;
-    }
     /*-----WORK SECTION STYLE ELEMENTS-----*/
     .other-work {
         flex: 100%;
