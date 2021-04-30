@@ -52,3 +52,78 @@ section {
     font-weight: lighter;
     color: var(--s-color-81t);
 }
+
+@media screen and (max-width: 980px) {
+
+    /*-----COMMON SECTION STYLING-----*/
+
+    section {
+        padding: 10px;
+    }
+
+    /*-----ALL SECTIONS-----*/
+
+
+    .experience h2 {
+        font-size: 28px;
+        padding: 0 0 10px 0;
+    }
+    
+    .experience h3{
+        font-size: 22px;
+        padding: 5px 0;
+    }
+    
+    .experience h4 {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .experience ul {
+        padding: 8px 5px 5px 18px;
+    }
+     
+    .experience ul li, .experience p {
+        font-size: 18px;
+        padding: 0 0 5px 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+ 
+}
+
+@media screen and (max-width: 575px) {
+    
+    /*-----COMMON SECTION STYLING-----*/
+
+    section {
+        padding: 5px;
+    }
+
+    /*-----ALL SECTIONS-----*/
+    
+    .experience {
+        text-align: left;
+    }
+    .experience h2 {
+        font-size: 20px;
+        padding: 0 0 10px 0;
+        text-align: center;
+    }
+    
+    .experience h3{
+        font-size: 18px;
+    }
+    
+    .experience h4 {
+        font-size: 16px;
+    }
+     
+    .experience ul li, .experience p {
+        font-size: 16px;
+        padding: 0 0 5px 0;
+    }
+
+}

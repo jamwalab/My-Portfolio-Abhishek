@@ -227,7 +227,14 @@ section {
     max-height: 24px;
 }
 
+.icon-img a:hover {
+    transition: all 1s;
+    transform: scale(1.05);
+    color: var(--s-color-50t);
+}
+
 .deco {
+    
     text-decoration: none;
     font-weight: bold;
     color: var(--s-color);
