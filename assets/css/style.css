@@ -288,7 +288,7 @@ section {
     /*-----ABOUT ME SECTION STYLE ELEMENTS-----*/
 
     .about-text p {
-        padding: 10px;
+        padding: 5px;
         font-size: 22px;
     }
 
@@ -416,6 +416,13 @@ section {
 
     .hero-text p {
         padding: 5px;
+    }
+
+    /*-----ABOUT ME SECTION STYLE ELEMENTS-----*/
+
+    .about-text p {
+        font-size: 16px;
+        color: var(--s-color);
     }
 
     /*-----WORK SECTION STYLE ELEMENTS-----*/
