@@ -227,10 +227,211 @@ section {
     max-height: 24px;
 }
 
+.icon-img a:hover {
+    transition: all 1s;
+    transform: scale(1.05);
+    color: var(--s-color-50t);
+}
+
 .deco {
+    
     text-decoration: none;
     font-weight: bold;
     color: var(--s-color);
     padding: 5px;
     text-shadow: 0 0 2px var(--s-color-50t);
+}
+
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
+
+@media screen and (max-width: 980px) {
+    /*-----HEADER SECTION STYLE ELEMENTS-----*/
+    header {
+        position: relative;
+        padding: 8px 0;
+    }
+
+    header nav {
+        width: 100%;
+        padding: 8px 20px 4px 20px;
+    }
+
+    /*-----COMMON SECTION STYLING-----*/
+
+    section {
+        padding: 15px 10px;
+    }
+
+    .section-h2 {
+        flex: 100%;
+        padding: 10px;
+        font-size: 28px;
+    }
+
+    .right-section {
+        flex: 100%;
+        padding: 5px;
+        border-left: none;
+        border-top: 2px solid var(--s-color);
+    }
+
+    /*-----HERO SECTION STYLE ELEMENTS-----*/
+
+    .hero-img {
+        padding: 10px;
+    }
+
+    .hero-text {
+        padding: 10px 10px 10px 30px;
+    }
+
+    /*-----ABOUT ME SECTION STYLE ELEMENTS-----*/
+
+    .about-text p {
+        padding: 5px;
+        font-size: 22px;
+    }
+
+    /*-----WORK SECTION STYLE ELEMENTS-----*/
+
+    .work {
+        padding: 10px;
+    }
+
+    /*-----CONTACT DETAILS-----*/
+
+    .contact-details {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    /*-----HEADER SECTION STYLE ELEMENTS-----*/
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    /*-----COMMON SECTION STYLING-----*/
+
+    section {
+        padding: 5px;
+    }
+
+    /*-----HERO SECTION STYLE ELEMENTS-----*/
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    /*-----ABOUT ME SECTION STYLE ELEMENTS-----*/
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+    /*-----WORK SECTION STYLE ELEMENTS-----*/
+
+    .img-text h3 {
+        font-size: 18px;
+    }
+
+    .img-text p {
+        font-size: 12px;
+    }
+
+    /*-----CONTACT DETAILS-----*/
+    .icon-img {
+        flex: 50%;
+        padding: 5px 0;
+    }
+
+    .contact-details {
+        font-size: 18px;
+    }
+
+    .icon-img img {
+        max-height: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /*-----HEADER SECTION STYLE ELEMENTS-----*/
+
+    header h1 {
+        font-size: 28px;
+        width: 100%;
+        padding: 10px 0 5px 0;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    header nav ul {
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    header nav ul li {
+        flex: 50%;
+        padding: 0 0 5px 0;
+    }
+
+    /*-----COMMON SECTION STYLING-----*/ 
+
+    .section-h2 {
+        padding: 5px;
+        font-size: 26px;
+    }
+
+    /*-----HERO SECTION STYLE ELEMENTS-----*/
+
+    .hero-img {
+        flex: 100%;
+    }
+
+    .hero-img img {
+        max-height: 200px;
+    }
+
+    .hero-text {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    .hero-text p {
+        padding: 5px;
+    }
+
+    /*-----ABOUT ME SECTION STYLE ELEMENTS-----*/
+
+    .about-text p {
+        font-size: 16px;
+        color: var(--s-color);
+    }
+
+    /*-----WORK SECTION STYLE ELEMENTS-----*/
+    .other-work {
+        flex: 100%;
+    }
+
+    /*-----CONTACT DETAILS-----*/
+    .icon-img {
+        flex: 100%;
+    }
 }
